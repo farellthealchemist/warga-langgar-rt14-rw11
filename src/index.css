@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Indonesian Independence Day Theme - Red & White with Gold Accents
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
+
+    /* Indonesian Red */
+    --primary: 0 74% 42%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 15%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Gold accent for special elements */
+    --accent: 45 100% 51%;
+    --accent-foreground: 0 0% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 95%;
+    --ring: 0 74% 42%;
+
+    /* Custom Indonesian theme colors */
+    --red-primary: 0 74% 42%;
+    --red-light: 0 74% 65%;
+    --red-dark: 0 74% 25%;
+    --gold: 45 100% 51%;
+    --gold-light: 45 100% 70%;
+    --white-pure: 0 0% 100%;
+    --gray-warm: 30 5% 95%;
+    
+    /* Gradients */
+    --gradient-patriotic: linear-gradient(135deg, hsl(var(--red-primary)), hsl(var(--white-pure)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--gold-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--red-primary)) 0%, hsl(var(--red-light)) 50%, hsl(var(--white-pure)) 100%);
+    
+    /* Shadows */
+    --shadow-patriotic: 0 10px 25px -5px hsl(var(--red-primary) / 0.2);
+    --shadow-gold: 0 8px 25px -5px hsl(var(--gold) / 0.3);
+    --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Indonesian Red for dark mode */
+    --primary: 0 74% 55%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 90%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    /* Gold accent for dark mode */
+    --accent: 45 100% 60%;
+    --accent-foreground: 0 0% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 18%;
+    --ring: 0 74% 55%;
+
+    /* Custom dark mode colors */
+    --red-primary: 0 74% 55%;
+    --red-light: 0 74% 70%;
+    --red-dark: 0 74% 35%;
+    --gold: 45 100% 60%;
+    --gold-light: 45 100% 75%;
+    --white-pure: 0 0% 95%;
+    --gray-warm: 0 0% 15%;
+    
+    /* Dark mode gradients */
+    --gradient-patriotic: linear-gradient(135deg, hsl(var(--red-primary)), hsl(0 0% 20%));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--gold-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--red-primary)) 0%, hsl(var(--red-light)) 50%, hsl(0 0% 20%) 100%);
+    
+    /* Dark mode shadows */
+    --shadow-patriotic: 0 10px 25px -5px hsl(var(--red-primary) / 0.4);
+    --shadow-gold: 0 8px 25px -5px hsl(var(--gold) / 0.4);
+    --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
